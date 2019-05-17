@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Game</title>
+
+    <script id="data" src="minigame.js" type="text/javascript">
+        {
+          "figuras": [
+              {"name": "cachorro", "audio": "Assets/cachorro.wav", "img": "Assets/cachorro.gif"},
+              {"name": "gato", "audio": "Assets/gato.wav", "img": "Assets/gato.gif"},
+              {"name": "cavalo", "audio": "Assets/cavalo.wav", "img": "Assets/cavalo.gif"},
+              {"name": "galo", "audio": "Assets/galo.wav", "img": "Assets/galo.gif"},
+              {"name": "vaca", "audio": "Assets/vaca.wav", "img": "Assets/vaca.gif"},
+              {"name": "porco", "audio": "Assets/porco.wav", "img": "Assets/porco.gif"}
+          ]
+        }
+    </script>
+
+</head>
+
+<!-- Onde funciona a interação com Back End -->
+<body onload="start()">
+
+    <div class="container-fluid" id="fundo">
+
+        <div class="container-fluid">
+
+            <div class="text-center">
+                <img class="rounded" id="animalfigure">
+
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-md-2 ">
+
+                        <audio id="animalaudio"></audio>
+                        <div>
+                            <button class="btn btn-primary" onclick="playAudio()">Reproduzir o áudio</button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <form>
+
+                            <input type="text" class="form-control" id="figuretext" placeholder="O Nome do Animal" value="" >
+                    </div>
+
+                    </form>
+                    <div class="col-md-2 ">
+                        <button class="btn btn-primary" onclick="processName()" type="submit">Enviar</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <p id="score">Pontuação: 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html">
+        <button type="button" class="btn btn-primary btn-lg btn-block">INICIO</button>
+    </a>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+#img{
+	background: url("./logo.png") no-repeat center cover;
+ }
+.image{ 
+	display: block !important;
+    margin: 0 auto !important;
+    max-width: 100%;
+ }
+ #fundo{
+	width: auto;
+	height: auto;
+	background-color: rgb(0, 191, 255);
+ }
+
+#animalfigure {border: solid; border-radius: 30px !important;} 
+.sucess {
+	border-width: medium;
+	border-color: green !important;
+}
+.fail {
+	border-width: medium;
+	border-color: red !important;
+}
+
+#principal{ 
+
+	background-color: rgb(70, 148,36);
+ }
